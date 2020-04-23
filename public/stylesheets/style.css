@@ -118,6 +118,9 @@ table.dataTable thead .sorting_desc {
 #top_bar .col-sm-4 .wrap span{
   font-weight: bold;
 }
+#filtering .custom-select{
+  margin-bottom: 15px;
+}
 #filtering .custom-select.mr-2:last-child{
   margin-right: 0 !important;
 }
@@ -181,10 +184,9 @@ tr,td{
   text-align: center;
 }
 #cta{
-  position: absolute;
+  text-align: center;
+  position: relative;
   display: block;
-  right: 20px;
-  top: -25px;
   background-color: #6A8DD1;
   padding: 10px;
   color: white;

@@ -18,55 +18,48 @@
   </head>
   <body>
     <div id="wrap_home">
-    <div class="container mb-3">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-10 offset-lg-1 text-center">
-          <a href="/admin" id="cta">Edit page</a>
-          <h1 id="title"></h1>
-          <p id="introtop" class="mb-0 mb-sm-3"></p>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-0 mb-sm-3" id="top_bar">
-      <div class="row text-center">
-        <div class="col-lg-10 offset-lg-1">
+        <div class="col-lg-3 offset-lg-1">
           <div class="row">
-            <div class="col-12">
+            <div class="col-lg-10 offset-lg-1 text-center">
+              <h1 id="title"></h1>
+              <p id="introtop" class="mb-0 mb-sm-3"></p>
+            </div>
+          </div>
+          <div id="filtering" class="mb-3"></div>
+          <a href="/admin" id="cta">Edit page</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row" id="top_bar">
+            <div class="col-12" >
               <div class="wrap_chart">
                 <div id="fadetext"></div>
                 <div id="chartContainer" style="height: 150px; width: 100%;" class="mb-2"></div>
               </div>
             </div>
-            <div class="col-6 col-sm-3 mb-3 mb-sm-1 text-info">
+            <div class="col-6 col-sm-3 mb-3 mb-sm-1 text-info d-none">
               <div class="wrap p-2 p-md-4 d-flex align-items-center justify-content-center">
                 Total: <span class="total">0</span>
               </div>
             </div>
-            <div class="col-6 col-sm-3 mb-3 mb-sm-1 text-primary">
+            <div class="col-6 col-sm-4 mb-3 mb-sm-1 text-primary">
               <div class="wrap p-2 p-md-4 d-flex align-items-center justify-content-center">
-                Confirmed: <span class="active">0</span>
+                Cases tested: <span class="active">0</span>
               </div>
             </div>
-            <div class="col-6 col-sm-3 mb-3 mb-sm-1 text-success">
+            <div class="col-6 col-sm-4 mb-3 mb-sm-1 text-success">
               <div class="wrap p-2 p-md-4 d-flex align-items-center justify-content-center">
-                Recovered: <span class="recovered">0</span>
+                Positive: <span class="recovered">0</span>
               </div>
             </div>
-            <div class="col-6 col-sm-3 mb-3 mb-sm-1 text-danger">
+            <div class="col-6 col-sm-4 mb-3 mb-sm-1 text-danger">
               <div class="wrap p-2 p-md-4 d-flex align-items-center justify-content-center">
-                Deceased: <span class="deceased">0</span>
+                Negative: <span class="deceased">0</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-          <div id="filtering" class="d-flex mb-3"></div>
-          
-          <table class="w-100 table table-striped" id="results">
+          <table class="w-100 table table-striped mt-4" id="results">
             <thead>
               <tr>
                 <td>ID</td>
@@ -86,7 +79,7 @@
         </div>
       </div>
     </div>
-    <footer class="container mt-4">
+    <footer class="container mt-4 d-none">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
           Page Address: <a href="#" target="_blank" id="pageaddress"></a><br />

@@ -197,18 +197,13 @@ getdata.getDataByKey(getdata.userAddress+"_counterNum").then(async res => {
 
       switch (entry.status) {
         case "1":
-          status = "CONFIRMED";
+          status = "POSITIVE";
           countActive++;
           break;
 
         case "2":
-          status = "RECOVERED";
+          status = "NEGATIVE";
           countRecovered++;
-          break;
-
-        case "3":
-          status = "DECEASED";
-          countDeceased++;
           break;
 
         default:
