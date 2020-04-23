@@ -214,8 +214,10 @@ tr,td{
     padding: 35px 0px 15px 0px;
   }
   #filtering{
+    margin-top: 15px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: flex;
   }
   #filtering .custom-select {
     width: 48%;
@@ -228,12 +230,14 @@ tr,td{
   #admin .btn-primary.w-50 {
     width: 75% !important;
   }
-  #cta{
-    right: 0px;
+  #cta {
+    position: absolute;
     top: -35px;
+    right: 0;
   }
 }
 @media(max-width:580px) {
+
   .dataTables_length {
     width: 70%;
     margin: auto;
