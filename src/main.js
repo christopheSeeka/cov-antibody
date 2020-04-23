@@ -218,7 +218,7 @@ getdata.getDataByKey(getdata.userAddress+"_counterNum").then(async res => {
           <td class="gender">${sanitizeHtml(entry.gender, { allowedTags: [] })}</td>
           <td class="age">${entry.age}</td>
           <td class="location">${sanitizeHtml(entry.location, { allowedTags: [] })}</td>
-          <td class="pec">${sanitizeHtml(entry.pec, { allowedTags: [] })}</td>
+          <td class="pec">${sanitizeHtml(entry.exp, { allowedTags: [] })}</td>
           <td class="status">${status}</td>
         </tr>`;
 

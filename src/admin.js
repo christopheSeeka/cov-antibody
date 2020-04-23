@@ -67,8 +67,8 @@ document.getElementById("loader").classList.remove("fade0");
     document.getElementById("age").value = age[0].value;
     let location = await getdata.getDataByKey(signer._userData.address+"_patient_" + id + "_location");
     document.getElementById("location").value = location[0].value;
-    let pec = await getdata.getDataByKey(signer._userData.address+"_patient_" + id + "_pec");
-    document.getElementById("pec").value = pec[0].value;
+    let exp = await getdata.getDataByKey(signer._userData.address+"_patient_" + id + "_exp");
+    document.getElementById("pec").value = exp[0].value;
     let status = await getdata.getDataByKey(signer._userData.address+"_patient_" + id + "_status");
     document.getElementById("status").value = status[0].value;
   }
