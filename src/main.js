@@ -203,7 +203,7 @@ getdata.getDataByKey(getdata.userAddress+"_counterNum").then(async res => {
 
         case "2":
           status = "NEGATIVE";
-          countRecovered++;
+          countDeceased++;
           break;
 
         default:
@@ -227,8 +227,8 @@ getdata.getDataByKey(getdata.userAddress+"_counterNum").then(async res => {
     });
 
   // SET TOP WIDGET DATA
-  document.querySelector(".active").textContent = countActive;
-  document.querySelector(".recovered").textContent = countRecovered;
+  document.querySelector(".active").textContent = countTotal;
+  document.querySelector(".recovered").textContent = countActive;
   document.querySelector(".deceased").textContent = countDeceased;
   document.querySelector(".total").textContent = countTotal;
 
